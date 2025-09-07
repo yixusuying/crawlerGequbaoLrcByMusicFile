@@ -1,0 +1,61 @@
+# 爬取结果和输出文件
+result/
+*.json
+!package.json
+!package-lock.json
+
+# LRC歌词文件
+*.lrc
+lrc/
+
+# 音乐文件列表
+music_list.json
+music_list.csv
+music_list.txt
+
+# 搜索URL列表
+search_urls.json
+search_urls.txt
+
+# 测试输出
+gequbao-*.json
+juejin*.json
+TopArticles*.json
+GeekPark*.json
+
+# 日志文件
+*.log
+logs/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.temp
+tmp/
+temp/
+
+# 备份文件
+*.bak
+*.backup
+backup/
+
+# 调试文件
+*.debug
+debug/

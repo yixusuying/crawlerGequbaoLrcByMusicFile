@@ -1,0 +1,68 @@
+{
+  "name": "gequbao-lyrics-crawler",
+  "version": "1.0.0",
+  "description": "自动从本地音乐文件批量获取对应的LRC歌词文件 - 基于歌曲宝网站",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "node testGequbao.js",
+    "pipeline": "node fullPipeline.js",
+    "parse-audio": "node audioParser.js"
+  },
+  "keywords": [
+    "lyrics",
+    "lrc",
+    "music",
+    "crawler",
+    "gequbao",
+    "audio",
+    "batch",
+    "chinese",
+    "歌词",
+    "音乐",
+    "爬虫"
+  ],
+  "author": "yixusuying",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yixusuying/crawlerGequbaoLrcByMusicFile.git"
+  },
+  "homepage": "https://github.com/yixusuying/crawlerGequbaoLrcByMusicFile#readme",
+  "bugs": {
+    "url": "https://github.com/yixusuying/crawlerGequbaoLrcByMusicFile/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "superagent": "^8.1.2",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "music-metadata": "^10.5.0"
+  },
+  "optionalDependencies": {
+    "music-metadata": "^10.5.0"
+  },
+  "bin": {
+    "gequbao-lyrics": "./index.js"
+  },
+  "files": [
+    "*.js",
+    "README.md",
+    "!testGequbao.js",
+    "!example.js"
+  ],
+  "directories": {
+    "doc": ".",
+    "lib": "."
+  },
+  "config": {
+    "defaultMusicPath": "D:\\chromeDownLoad\\musicFlie",
+    "outputDir": "./result",
+    "defaultDelay": 2000,
+    "maxConcurrent": 2
+  }
+}
